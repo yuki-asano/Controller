@@ -28,6 +28,7 @@ void setup() {
 }
 void loop() {
   first_page();
-  get_color();
-  conver_work();
+  //get_color();
+  //conver_work();
+  belt_move();
 }
