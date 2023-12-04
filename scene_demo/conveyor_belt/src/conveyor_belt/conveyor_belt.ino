@@ -17,7 +17,7 @@ ros::Publisher pub("is_conveyor_on", &is_conveyor_on);
 
 void start_cb(const std_msgs::Bool &msg){
   if(msg.data){
-    set_speed(1, 200, NULL, false);  // modify direction from belt_move()
+    set_speed(1, 1, NULL, false);  // modify direction (1st arg) and speed (2nd arg. lower value results high speed) from belt_move()
     is_conveyor_on.data = true;
   }
 }
